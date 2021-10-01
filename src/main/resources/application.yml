@@ -1,0 +1,14 @@
+---
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.PostgreSQLDialect"
+    hibernate:
+#      ddl-auto: none
+      show-sql: true
+  datasource:
+    driverClassName: "org.postgresql.Driver"
+    url: "postgres://znpdzrbuetisid:c11ea87235240a99af9e8b641c155a549379d6a820ca40395c7c41f6fec94c5f@ec2-79-125-30-28.eu-west-1.compute.amazonaws.com:5432/d6ngfhp1mrnrbn"
+    username: "znpdzrbuetisid"
+    password: "c11ea87235240a99af9e8b641c155a549379d6a820ca40395c7c41f6fec94c5f"
