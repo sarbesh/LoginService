@@ -1,0 +1,8 @@
+---
+spring:
+  application:
+    name: Login-Service
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://user:password@localhost:8888}
+      enabled: true

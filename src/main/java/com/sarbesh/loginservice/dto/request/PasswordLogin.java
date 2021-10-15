@@ -1,7 +1,21 @@
-package com.sarbesh.loginservice.dto;
+package com.sarbesh.loginservice.dto.request;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
 
 public class PasswordLogin {
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
+    @NotEmpty
+    @Email
     private String emailId;
+
+    @NotEmpty
     private String password;
 
     public PasswordLogin() {

@@ -1,4 +1,4 @@
-package com.sarbesh.loginservice.dto;
+package com.sarbesh.loginservice.dto.response;
 
 public class LoginResponse {
     private String jwt;

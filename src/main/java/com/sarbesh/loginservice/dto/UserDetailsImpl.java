@@ -6,21 +6,20 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
-import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class LoginUserDetail implements UserDetails {
+public class UserDetailsImpl implements UserDetails {
     private String email;
     private String password;
     private Set<GrantedAuthority> roles;
     private boolean active;
 
-    public LoginUserDetail() {
+    public UserDetailsImpl() {
     }
 
-    public LoginUserDetail(UserAuth userAuth) {
+    public UserDetailsImpl(UserAuth userAuth) {
         this.email=userAuth.getEmail();
         this.password=userAuth.getPassword();
         this.active= userAuth.isActive();

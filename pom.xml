@@ -20,9 +20,9 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>com.sarbesh</groupId>
-			<artifactId>core</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			<groupId>com.github.sarbesh</groupId>
+			<artifactId>SarbeshCore</artifactId>
+			<version>v1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -119,6 +119,10 @@
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
+		</repository>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
